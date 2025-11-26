@@ -1,0 +1,30 @@
+title: Serial Programmer Starter
+description: >
+  A blank Serial Programmer Jekyll theme ready for customization.
+url: https://snowbird91.github.io
+baseurl: "/ctf"
+markdown: kramdown
+
+# for atom feed
+author:
+  name: "Your Name"
+  email: you@example.com
+
+plugins:
+  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+collections_dir: all_collections
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: "all_collections/_posts"
+    values:
+      layout: "post"
+      permalink: /posts/:title/
+exclude: ["sitemap.xml", "feed.xml", "LICENSE", "README.md"]

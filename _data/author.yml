@@ -1,0 +1,13 @@
+name: Your Name
+dp: https://placehold.co/320x320?text=Photo
+description: "
+  <p>
+    Introduce yourself, your team, or your project here.
+  </p>
+  <br/>
+  <p>
+    Share a short mission statement or remove this text entirely.
+  </p>
+"
+email: you@example.com
+contact: []
