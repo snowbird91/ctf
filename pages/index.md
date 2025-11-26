@@ -7,7 +7,7 @@ show_intro: true
 hide_placeholder: true
 ---
 
-Welcome to my website!. Here's what I have to offer:
+Welcome to my website! Here's what I have to offer:
 
 - **About:** background, teams, and ways to reach me.
 - **Write-ups:** none currently, but some soon!
