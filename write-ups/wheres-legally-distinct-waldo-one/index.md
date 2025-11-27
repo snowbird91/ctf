@@ -23,29 +23,29 @@ So, here is the provided image:
 
 My first thought was that it looked like a college campus. Knowing that this CTF was hosted by George Mason University, that’s where I looked first.
 
-Looking at the university campus in Google Maps, I notice that the building color scheme and design looks very similar to the building in the provided image
+Looking at the university campus in Google Maps, I noticed that the building color scheme and design looked very similar to the building in the provided image.
 
 ![GMU campus comparison](./waldo-001.png)
 
+So, I started looking around. There were two distinct features I was looking for:
+
 ![Campus detail with similar architecture](./waldo-002.png)
-
-So, I started looking around. There are two distinct features I was looking for:
-
-![Highlighted features to match](./waldo-003.png)
 
 First, I noticed a large cell tower. Then, I used the entrance to the building to narrow the specific angle the picture was taken from down. Upon looking around, I see:
 
-![Cell tower and rooftop alignment](./waldo-004.png)
+![Highlighted features to match](./waldo-003.png)
 
 That’s the cell tower we need! And the rest of the roof seems to match the image. Now, we need to find the specific building the picture was taken from. Using the entrance, we can narrow the possibilities down:
 
-![Entrance overview](./waldo-005.png)
+![Cell tower and rooftop alignment](./waldo-004.png)
 
 There seems to be only two entrances to the building that look similar to the one in the image. Looking at the one on the left, I see:
 
-![Entrance close-up](./waldo-006.png)
+![Entrance overview](./waldo-005.png)
 
 This seems to match quite well! I notice a few distinct similarities:
+
+![Entrance close-up](./waldo-006.png)
 
 ![Matching entrance similarities](./waldo-007.png)
 
