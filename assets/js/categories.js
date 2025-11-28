@@ -32,15 +32,14 @@ window.onload = function () {
     document.querySelector("#category-modal").classList.toggle("open");
   })
   const chips = document.querySelectorAll(".filter-chip");
-  const getArticles = () =>
-    Array.from(document.querySelectorAll(".articles .article"));
+  const articles = document.querySelectorAll(".articles .article");
   chips.forEach((chip) => {
     chip.addEventListener("click", () => {
       chip.classList.toggle("active");
       const activeFilters = Array.from(chips)
         .filter((c) => c.classList.contains("active"))
         .map((c) => c.dataset.tag);
-      getArticles().forEach((article) => {
+      articles.forEach((article) => {
         const tags = article.dataset.tags
           ? article.dataset.tags.split(",")
           : [];
@@ -61,10 +60,10 @@ window.onload = function () {
     sortSelect.addEventListener("change", (event) => {
       const direction = event.target.value;
       const section = document.querySelector(".articles");
-      const sorted = getArticles().sort((a, b) => {
+      const sorted = Array.from(articles).sort((a, b) => {
         const orderA = parseInt(a.dataset.order || "0", 10);
         const orderB = parseInt(b.dataset.order || "0", 10);
-        if (orderA !== orderB) {
+        if (orderA || orderB) {
           return direction === "asc" ? orderA - orderB : orderB - orderA;
         }
         const dateA = new Date(a.dataset.date);
