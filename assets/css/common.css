@@ -220,9 +220,10 @@ pre:hover .copy-code-button {
 }
 
 .view-counter img {
-  height: 24px;
+  height: 18px;
   width: auto;
   image-rendering: pixelated;
+  transform: translateY(1px);
 }
 
 [data-theme="light"] .copy-code-button {

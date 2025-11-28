@@ -10,7 +10,7 @@ order: 4
 
 **PatriotCTF 2025**
 
-I participated with my high school club team tjcsc in PatriotCTF 2025, and we got 54th overall!
+I participated with my club team tjcsc in PatriotCTF 2025, and we got 54th overall!
 
 **Challenge:** Where’s Legally Distinct Waldo Four
 
