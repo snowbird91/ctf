@@ -34,6 +34,11 @@ I'm a student intersted in cybersecurity and CTFs. I usually bounce between two 
   </thead>
   <tbody>
     <tr>
+      <td>WannaGame Championship 2025</td>
+      <td>US!?</td>
+      <td>15th</td>
+    </tr>
+    <tr>
       <td>CyKor CTF 2025</td>
       <td>US!?</td>
       <td>28th</td>
