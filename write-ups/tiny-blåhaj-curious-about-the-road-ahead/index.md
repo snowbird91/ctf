@@ -12,7 +12,7 @@ order: 9
 
 I participated with my club team tjcsc in Haix-la-Chapelle 2025, and we got first place! 
 
-**Challenge:** Tiny Blåhaj: curious about the road ahead
+**Challenge:** Tiny Blåhaj: curious about the road ahead  
 **Category:** OSINT  
 **Author:** Tschotsch  
 **Flag:** `haix{n1360b_medyka}`
