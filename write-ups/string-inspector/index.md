@@ -8,9 +8,9 @@ permalink: /write-ups/string-inspector/
 order: 10
 ---
 
-**Vuw CTF 2025**
+**VuwCTF 2025**
 
-I played Vuw CTF 2025 with tjcsc. We got 5th place!
+I played VuwCTF 2025 with tjcsc. We got 5th place!
 
 **Challenge:** string-inspector  
 **Category:** Reverse Engineering  
