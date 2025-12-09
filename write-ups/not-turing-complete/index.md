@@ -284,7 +284,7 @@ There we go! The flag was ``VuwCTF{Tur1NG_w4s_r1ght_0Oa0}``. Beautiful!
 - Copying the input into another variable (`b`) early was key. It doubled as scratch space to store the accumulator in unused high bits.
 - When there's no looping, **generate** the repetitive code. It avoids typos and mirrors the spec exactly.
 
-Thank you for reading my write-up! This was an extremely fun CTF, and I would like to express my appreciation to the organizers for hosting the CTF
+Thank you for reading my write-up! This was an extremely fun CTF, and I would like to express my appreciation to the organizers for hosting the CTF!
 
 If there’s anything you think I could improve on in future write-ups, please let me know!
 

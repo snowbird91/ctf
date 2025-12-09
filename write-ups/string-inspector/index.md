@@ -218,7 +218,7 @@ Other than both Max and I losing some braincells, it was a pretty fun challenge!
 - Even stripped static binaries leak constants in `.rodata`; spotting ASCII gives you the targets to aim for.
 - If a checker treats input as a string, leading zeroes can produce multiple “valid” answers. If a platform rejects your locally accepted flag, consider the exact formatting the code expects (and don't hesitate to make a ticket for clarification).
 
-Thank you for reading my write-up! This was an extremely fun CTF, and I would like to express my appreciation to the organizers for hosting the CTF
+Thank you for reading my write-up! This was an extremely fun CTF, and I would like to express my appreciation to the organizers for hosting the CTF!  
 
 If there’s anything you think I could improve on in future write-ups, please let me know!
 

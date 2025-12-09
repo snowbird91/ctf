@@ -220,7 +220,7 @@ Enter flag: VuwCTF{very_classy_d0'nt_6ou_s33}
 # Correct!
 ```
 
-Great! I confirmed that the flag was correct: ``VuwCTF{very_classy_d0'nt_6ou_s33}``
+Great! I confirmed that the flag was correct: ``VuwCTF{very_classy_d0'nt_6ou_s33}``.
 
 ---
 
@@ -230,7 +230,7 @@ Great! I confirmed that the flag was correct: ``VuwCTF{very_classy_d0'nt_6ou_s33
 - The 6-byte stride in the table was a cute obfuscation; only the first byte mattered for each character.
 - When a challenge tells you “static only”, it is definitely in your best interest to trust it! The `/proc` and `ptrace` probes would have ruined a live session.
 
-Thank you for reading my write-up! This was an extremely fun CTF, and I would like to express my appreciation to the organizers for hosting the CTF
+Thank you for reading my write-up! This was an extremely fun CTF, and I would like to express my appreciation to the organizers for hosting the CTF!
 
 If there’s anything you think I could improve on in future write-ups, please let me know!
 
