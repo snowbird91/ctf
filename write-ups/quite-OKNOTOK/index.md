@@ -20,7 +20,6 @@ I played niteCTF 2025 with tjcsc. We got 1st place!
 
 ![](./1.png)
 
-
 ---
 
 ## My initial read / first impressions
