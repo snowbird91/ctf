@@ -352,7 +352,9 @@ The katb page held a huge `<code>` block. Pulling it and base64-decoding produce
 
 It appears to say `p2: rgba`. How do I use this?
 
-The trick here was that each column’s pixels were being hashed into base64 digits with `(r*3 + g*5 + b*7 + a*11) % 64`. Taking the rightmost column, mapping through the base64 alphabet, padding, and decoding yielded a clear string:
+- At this point we stopped treating the second QOI as “just an image” and read the QOI spec. QOI decoders maintain a 64-slot pixel cache, and every decoded pixel is inserted at a deterministic index:
+  - `idx = (r*3 + g*5 + b*7 + a*11) % 64`
+- That produces values in the range 0-63, which matched the Pastebin hints ("indices are mapped to base‑64 alphabets" and "Tags: qoi_op_index"). So we took the rightmost column’s pixels, computed this QOI index for each one, mapped 0-63 through the Base64 alphabet, and base64-decoded the resulting string to get:
 
 ```
 part 2: n0_y0q0an}
