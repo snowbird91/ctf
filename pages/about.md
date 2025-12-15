@@ -7,10 +7,10 @@ show_bio: false
 
 ## Hey! I'm Andrew (snowbird91)
 
-I'm a student intersted in cybersecurity and CTFs. I usually bounce between two teams:
+I'm a high school student intersted in cybersecurity and CTFs. I usually bounce between two teams:
 
-- **[tjcsc](https://ctftime.org/team/53812)** — my club team.
-- **[0xf1sh](https://0xf1.sh)** — secondary roster for CTFs: forensics, crypto, OSINT, and whatever gaps need filling.
+- **[tjcsc](https://ctftime.org/team/53812)** — captain of my high school club team.
+- **[0xf1sh](https://0xf1.sh)** — secondary roster for CTFs.
 
 ### Focus areas
 - Forensics, cryptography, OSINT
