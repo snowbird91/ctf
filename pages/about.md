@@ -34,6 +34,21 @@ I'm a student intersted in cybersecurity and CTFs. I usually bounce between two 
   </thead>
   <tbody>
     <tr>
+      <td>SECCON CTF 14 Quals</td>
+      <td>US!?</td>
+      <td>87th</td>
+    </tr>
+    <tr>
+      <td>niteCTF 2025</td>
+      <td>tjcsc</td>
+      <td>1st 👑</td>
+    </tr>
+    <tr>
+      <td>NexHunt CTF 2025</td>
+      <td>tjcsc</td>
+      <td>28th</td>
+    </tr>
+    <tr>
       <td>BackdoorCTF 2025</td>
       <td>tjcsc</td>
       <td>47th</td>
