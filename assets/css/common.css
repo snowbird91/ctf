@@ -14,6 +14,9 @@
   --glow-strong: 0 0 35px rgba(43, 241, 211, 0.18);
   --panel-glass: rgba(12, 27, 41, 0.82);
   --border-strong: rgba(88, 196, 255, 0.25);
+  --snow-bright: rgba(255, 255, 255, 0.85);
+  --snow-dim: rgba(233, 255, 245, 0.55);
+  --snow-faint: rgba(233, 255, 245, 0.35);
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,6 +36,9 @@
     --glow-strong: 0 0 25px rgba(31, 160, 242, 0.2);
     --panel-glass: rgba(255, 255, 255, 0.82);
     --border-strong: rgba(31, 160, 242, 0.2);
+    --snow-bright: rgba(15, 37, 53, 0.55);
+    --snow-dim: rgba(15, 37, 53, 0.35);
+    --snow-faint: rgba(15, 37, 53, 0.2);
   }
 }
 
@@ -72,6 +78,9 @@
   --glow-strong: 0 0 25px rgba(31, 160, 242, 0.2);
   --panel-glass: rgba(255, 255, 255, 0.82);
   --border-strong: rgba(31, 160, 242, 0.2);
+  --snow-bright: rgba(15, 37, 53, 0.55);
+  --snow-dim: rgba(15, 37, 53, 0.35);
+  --snow-faint: rgba(15, 37, 53, 0.2);
 }
 
 [data-theme="dark"] {
@@ -90,6 +99,9 @@
   --glow-strong: 0 0 35px rgba(43, 241, 211, 0.18);
   --panel-glass: rgba(12, 27, 41, 0.82);
   --border-strong: rgba(88, 196, 255, 0.25);
+  --snow-bright: rgba(255, 255, 255, 0.85);
+  --snow-dim: rgba(233, 255, 245, 0.55);
+  --snow-faint: rgba(233, 255, 245, 0.35);
 }
 
 #category-modal-bg {
@@ -217,6 +229,171 @@ pre:hover .copy-code-button {
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
+}
+
+.snowfall {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0.9;
+  background-image: radial-gradient(
+      2px 2px at 18px 22px,
+      var(--snow-bright) 0%,
+      var(--snow-bright) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      1px 1px at 64px 130px,
+      var(--snow-faint) 0%,
+      var(--snow-faint) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      3px 3px at 140px 40px,
+      var(--snow-bright) 0%,
+      var(--snow-bright) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      1.5px 1.5px at 210px 180px,
+      var(--snow-faint) 0%,
+      var(--snow-faint) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      2.5px 2.5px at 90px 210px,
+      var(--snow-dim) 0%,
+      var(--snow-dim) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      1px 1px at 34px 170px,
+      var(--snow-faint) 0%,
+      var(--snow-faint) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      2px 2px at 170px 90px,
+      var(--snow-dim) 0%,
+      var(--snow-dim) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      1.5px 1.5px at 120px 240px,
+      var(--snow-faint) 0%,
+      var(--snow-faint) 60%,
+      transparent 72%
+    );
+  background-size: 260px 260px;
+  animation: snowfall-mid 18s linear infinite;
+}
+
+.snowfall::before,
+.snowfall::after {
+  content: "";
+  position: absolute;
+  inset: -20vh 0 0 0;
+  background-image: radial-gradient(
+      3px 3px at 24px 36px,
+      var(--snow-bright) 0%,
+      var(--snow-bright) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      2px 2px at 110px 80px,
+      var(--snow-dim) 0%,
+      var(--snow-dim) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      1.5px 1.5px at 200px 60px,
+      var(--snow-faint) 0%,
+      var(--snow-faint) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      3.5px 3.5px at 160px 150px,
+      var(--snow-bright) 0%,
+      var(--snow-bright) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      2px 2px at 60px 190px,
+      var(--snow-dim) 0%,
+      var(--snow-dim) 60%,
+      transparent 72%
+    ),
+    radial-gradient(
+      1px 1px at 240px 210px,
+      var(--snow-faint) 0%,
+      var(--snow-faint) 60%,
+      transparent 72%
+    );
+  background-size: 320px 320px;
+  animation: snowfall-slow 26s linear infinite;
+  opacity: 0.75;
+}
+
+.snowfall::after {
+  background-size: 180px 180px;
+  animation: snowfall-fast 12s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes snowfall-mid {
+  0% {
+    background-position: 0 -30vh, 0 -30vh, 0 -30vh, 0 -30vh, 0 -30vh,
+      0 -30vh, 0 -30vh, 0 -30vh;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    background-position: 35px 120vh, -10px 120vh, 20px 120vh, -25px 120vh,
+      15px 120vh, -5px 120vh, 28px 120vh, -18px 120vh;
+    transform: translateX(-6px);
+  }
+}
+
+@keyframes snowfall-slow {
+  0% {
+    background-position: 0 -35vh, 0 -35vh, 0 -35vh, 0 -35vh, 0 -35vh, 0 -35vh;
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    background-position: -20px 125vh, 25px 125vh, -10px 125vh, 18px 125vh,
+      -28px 125vh, 12px 125vh;
+    transform: translateX(-2px);
+  }
+}
+
+@keyframes snowfall-fast {
+  0% {
+    background-position: 0 -25vh, 0 -25vh, 0 -25vh, 0 -25vh, 0 -25vh, 0 -25vh;
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(14px);
+  }
+  100% {
+    background-position: 22px 115vh, -18px 115vh, 12px 115vh, -8px 115vh,
+      16px 115vh, -12px 115vh;
+    transform: translateX(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snowfall,
+  .snowfall::before,
+  .snowfall::after {
+    animation: none;
+  }
 }
 
 .view-counter img {
