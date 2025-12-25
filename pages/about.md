@@ -9,7 +9,7 @@ show_bio: false
 
 I'm a high school student intersted in cybersecurity and CTFs. I usually bounce between two teams:
 
-- **[tjcsc](https://ctftime.org/team/53812)** — captain of my high school club team.
+- **[tjcsc](https://ctftime.org/team/53812)** — captain of my high school club team. top 10 CTFTime in the US (as of 12/25/2025)
 - **[0xf1sh](https://0xf1.sh)** — secondary roster for CTFs.
 
 ### Focus areas
