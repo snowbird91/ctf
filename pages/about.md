@@ -39,6 +39,10 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>31st</td>
     </tr>
     <tr>
+      <td>0CTF 2025</td>
+      <td>tjcsc</td>
+      <td>15th</td>
+    </tr>
     <tr>
       <td>BSides Algiers 2025</td>
       <td>tjcsc</td>
