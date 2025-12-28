@@ -34,6 +34,11 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>ASIS CTF Finals 2025</td>
+      <td>tjcsc</td>
+      <td>17th</td>
+    </tr>
+    <tr>
       <td>TSG CTF 2025</td>
       <td>tjcsc</td>
       <td>31st</td>
