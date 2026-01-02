@@ -18,7 +18,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-Visit `http://127.0.0.1:4000/ctf/` by default (adjust for your `baseurl`).
+Visit `http://127.0.0.1:4000/` by default (adjust for your `baseurl`).
 
 ## Customizing
 
@@ -29,4 +29,4 @@ Visit `http://127.0.0.1:4000/ctf/` by default (adjust for your `baseurl`).
 
 ## Deployment
 
-Designed for GitHub Pages: the repository builds with `baseurl: /ctf`. You can deploy anywhere Jekyll runs (Netlify, Cloudflare Pages, etc.).
+Designed for GitHub Pages: the repository builds with `baseurl: ""`. You can deploy anywhere Jekyll runs (Netlify, Cloudflare Pages, etc.).

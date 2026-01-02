@@ -1,8 +1,8 @@
 title: snowbird91
 description: >
   Andrew (snowbird91) | tjcsc & 0xf1sh | forensics, crypto, OSINT write-ups.
-url: https://snowbird91.github.io
-baseurl: "/ctf"
+url: https://ctf.snowbird91.xyz
+baseurl: ""
 markdown: kramdown
 kramdown:
   input: GFM
