@@ -34,6 +34,11 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>SCP CTF 2026</td>
+      <td>snowbird91 (individual)</td>
+      <td>8th</td>
+    </tr>
+    <tr>
       <td>New Year CTF 2026</td>
       <td>tjcsc</td>
       <td>26th</td>
