@@ -34,6 +34,16 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>VSL CTF 2026</td>
+      <td>tjcsc</td>
+      <td>78th</td>
+    </tr>
+    <tr>
+      <td>0xL4ugh CTF v5</td>
+      <td>tjcsc</td>
+      <td>20th</td>
+    </tr>
+    <tr>
       <td>MetaCTF January 2026 Flash CTF</td>
       <td>0xf1sh</td>
       <td>1st 👑</td>
