@@ -34,6 +34,21 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>PascalCTF 2026</td>
+      <td>0xf1sh</td>
+      <td>4th</td>
+    </tr>
+    <tr>
+      <td>ATC Winter Vibes Community CTF 2.0</td>
+      <td>tjcsc</td>
+      <td>52nd</td>
+    </tr>
+    <tr>
+      <td>Jeanne d'Hack CTF 2026 | 3ème Édition</td>
+      <td>tjcsc</td>
+      <td>25th</td>
+    </tr>
+    <tr>
       <td>VSL CTF 2026</td>
       <td>tjcsc</td>
       <td>78th</td>
