@@ -41,7 +41,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
     <tr>
       <td>ATC Winter Vibes Community CTF 2.0</td>
       <td>tjcsc</td>
-      <td>52nd</td>
+      <td>50th</td>
     </tr>
     <tr>
       <td>Jeanne d'Hack CTF 2026 | 3ème Édition</td>
