@@ -51,7 +51,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
     <tr>
       <td>Pragyan CTF 2026</td>
       <td>tjcsc</td>
-      <td>7th</td>
+      <td>1st 👑 (Student Division)</td>
     </tr>
     <tr>
       <td>PascalCTF 2026</td>
