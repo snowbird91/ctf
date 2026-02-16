@@ -34,6 +34,11 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>0xFUN CTF 2026</td>
+      <td>tjcsc</td>
+      <td>14th</td>
+    </tr>
+    <tr>
       <td>Nullcon Goa HackIM 2026 CTF</td>
       <td>tjcsc</td>
       <td>4th</td>
