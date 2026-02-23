@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "eye-on-the-sky"
+title: "Eye on the Sky"
 categories: [osint, batman's kitchen ctf 2026]
 date: 2025-12-14 13:00:00 -0500
 writeup: true
