@@ -71,7 +71,7 @@ Great! Let's see the flight number by clicking on the plane:
 
 ![](./5.png)
 
-We see an Alaska Airlines Boeing 737 Max 9 (door faling off reference?) with flight number ASA265. Great! We've found the flight number now. Let's go find that baggage carousel number.
+We see an Alaska Airlines Boeing 737 Max 9 (door falling off reference?) with flight number ASA265. Great! We've found the flight number now. Let's go find that baggage carousel number.
 
 Doing a quick Google search `alaska airlines flight status`, we get to the official Alaska Airlines website `https://www.alaskaair.com/flightstatus`. There appears to be a calendar option! Maybe we can see the flight status on January 19th, 2026:
 
