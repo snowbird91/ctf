@@ -55,7 +55,7 @@ The next question one would ask is, "Now how the hell am I meant to get the flig
 
 There is a very useful website called ADS-B Exchange. The website uses Automatic Dependent Surveillance-Broadcast (ADS-B) signals. ADS-B is an aviation surveillance technology in which an aircraft determines its location via satellite navigations or other sensors and periodically broadcasts its position and other related data, enabling it to be tracked (thanks Wikipedia!). For my non-avgeeks, it's basically a way to track plane data, including location and flight number. If you've heard of Jack Sweeny and him tracking the private jets of Russian oligarchs, Elon Musk, and Taylor Swift, he uses the same technology.
 
-Anyways, the website displays all the planes and shows all the positions. There is also a nice feature that allows me to planes at a specific date and time:
+Anyway, the website displays all the planes and shows all the positions. There is also a nice feature that allows me to planes at a specific date and time:
 
 ![](./2.png)
 
