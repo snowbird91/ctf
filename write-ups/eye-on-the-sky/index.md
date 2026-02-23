@@ -12,10 +12,10 @@ order: 15
 
 I played Batman's Kitchen CTF 2026 with tjcsc. We got 1st place! 
 
-**Challenge:** Eye on the Sky
+**Challenge:** Eye on the Sky  
 **Category:** OSINT  
 **Author:** Aramdana  
-**Description:** Flag format is the flight number (as marketed by the operating airline) (w/ no spaces), followed by '-', followed by the baggage carousel number. example : bkctf{DL2949-12C4}
+**Description:** Flag format is the flight number (as marketed by the operating airline) (w/ no spaces), followed by '-', followed by the baggage carousel number. example : bkctf{DL2949-12C4}  
 **Flag:** ``bkctf{AS265-23T2}``  
 **Note:** This challenge was the first challenge in a series of two challenges. However, the second challenge had more solves than this first part. I will be explaining this challenge using information gained from the second part.
 
