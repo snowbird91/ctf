@@ -34,6 +34,21 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>BearcatCTF 2026 - Setting Sail</td>
+      <td>tjcsc</td>
+      <td>9th</td>
+    </tr>
+    <tr>
+      <td>Batman's Kitchen CTF 2026</td>
+      <td>tjcsc</td>
+      <td>1st 👑</td>
+    </tr>
+    <tr>
+      <td>BITSCTF 2026</td>
+      <td>tjcsc</td>
+      <td>27th</td>
+    </tr>
+    <tr>
       <td>0xFUN CTF 2026</td>
       <td>tjcsc</td>
       <td>14th</td>
