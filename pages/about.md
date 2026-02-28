@@ -34,6 +34,11 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>MetaCTF Feburary 2026 Flash CTF</td>
+      <td>snowbird91 (individual)</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
       <td>BearcatCTF 2026 - Setting Sail</td>
       <td>tjcsc</td>
       <td>9th</td>
@@ -43,11 +48,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>1st 👑</td>
     </tr>
+    <!--
     <tr>
       <td>BITSCTF 2026</td>
       <td>tjcsc</td>
       <td>27th</td>
     </tr>
+    -->
     <tr>
       <td>0xFUN CTF 2026</td>
       <td>tjcsc</td>
@@ -73,6 +80,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>0xf1sh</td>
       <td>4th</td>
     </tr>
+    <!--
     <tr>
       <td>Jeanne d'Hack CTF 2026 | 3ème Édition</td>
       <td>tjcsc</td>
@@ -83,6 +91,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>78th</td>
     </tr>
+    -->
     <tr>
       <td>0xL4ugh CTF v5</td>
       <td>tjcsc</td>
@@ -108,16 +117,19 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>snowbird91 (individual)</td>
       <td>8th</td>
     </tr>
+    <!--
     <tr>
       <td>New Year CTF 2026</td>
       <td>tjcsc</td>
       <td>26th</td>
     </tr>
+    -->
     <tr>
       <td>Scarlet CTF</td>
       <td>0xf1sh</td>
       <td>3rd</td>
     </tr>
+    <!--
     <tr>
       <td>UofTCTF 2026</td>
       <td>tjcsc</td>
@@ -128,16 +140,19 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>30th</td>
     </tr>
+    -->
     <tr>
       <td>ASIS CTF Finals 2025</td>
       <td>tjcsc</td>
       <td>17th</td>
     </tr>
+    <!--
     <tr>
       <td>TSG CTF 2025</td>
       <td>tjcsc</td>
       <td>31st</td>
     </tr>
+    -->
     <tr>
       <td>0CTF 2025</td>
       <td>tjcsc</td>
@@ -148,16 +163,19 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>7th</td>
     </tr>
+    <!--
     <tr>
       <td>SECCON CTF 14 Quals</td>
       <td>US!?</td>
       <td>87th</td>
     </tr>
+    -->
     <tr>
       <td>niteCTF 2025</td>
       <td>tjcsc</td>
       <td>1st 👑</td>
     </tr>
+    <!--
     <tr>
       <td>NexHunt CTF 2025</td>
       <td>tjcsc</td>
@@ -168,21 +186,25 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>47th</td>
     </tr>
+    -->
     <tr>
       <td>WannaGame Championship 2025</td>
       <td>US!?</td>
       <td>15th</td>
     </tr>
+    <!--
     <tr>
       <td>CyKor CTF 2025</td>
       <td>US!?</td>
       <td>28th</td>
     </tr>
+    -->
     <tr>
       <td>VuwCTF 2025</td>
       <td>tjcsc</td>
       <td>5th</td>
     </tr>
+    <!--
     <tr>
       <td>Null CTF 2025</td>
       <td>tjcsc</td>
@@ -193,11 +215,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>55th</td>
     </tr>
+    -->
     <tr>
       <td>Haix-la-Chapelle 2025</td>
       <td>tjcsc</td>
       <td>1st 👑</td>
     </tr>
+    <!--
     <tr>
       <td>LakeCTF Quals 2025</td>
       <td>tjcsc</td>
@@ -213,6 +237,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>0xf1sh</td>
       <td>37th</td>
     </tr>
+    -->
     <tr>
       <td>AmateursCTF 2025</td>
       <td>tjcsc</td>
@@ -223,6 +248,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>3rd (Undergraduate & HS Division)</td>
     </tr>
+    <!--
     <tr>
       <td>V1t CTF 2025</td>
       <td>tjcsc</td>
@@ -233,11 +259,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>tjcsc</td>
       <td>69th</td>
     </tr>
+    -->
     <tr>
       <td>WatCTF F25</td>
       <td>0xf1sh</td>
       <td>18th</td>
     </tr>
+    <!--
     <tr>
       <td>ImaginaryCTF 2025</td>
       <td>0xf1sh</td>
@@ -248,6 +276,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>0xf1sh</td>
       <td>75th</td>
     </tr>
+    -->
     <tr>
       <td>h4ckc0n 2025</td>
       <td>0xf1sh</td>
