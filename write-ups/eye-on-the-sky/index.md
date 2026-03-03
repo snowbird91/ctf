@@ -5,7 +5,7 @@ categories: [osint, batman's kitchen ctf 2026]
 date: 2026-02-22 13:00:00 -0500
 writeup: true
 permalink: /write-ups/eye-on-the-sky/
-order: 15
+order: 16
 ---
 
 **Batman's Kitchen CTF 2026**
