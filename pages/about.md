@@ -33,6 +33,60 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
     </tr>
   </thead>
   <tbody>
+    <!--
+    <tr>
+      <td>tkbctf5</td>
+      <td>snowbird91 (individual)</td>
+      <td>40th</td>
+    </tr> 
+    <tr>
+      <td>Midnight Flag CTF - EXECUTION</td>
+      <td>snowbird91 (individual)</td>
+      <td>56th</td>
+    </tr> 
+    <tr>
+      <td>PsychCTF 2026</td>
+      <td>tjcsc</td>
+      <td>22nd</td>
+    </tr> 
+    -->
+    <tr>
+      <td>UTCTF 2026</td>
+      <td>tjcsc</td>
+      <td>1st 👑</td>
+    </tr> 
+    <tr>
+      <td>iCTF 2026</td>
+      <td>tjcsc</td>
+      <td>1st 👑 (High School Division)</td>
+    </tr> 
+    <tr>
+      <td>DiceCTF 2026 Quals</td>
+      <td>tjcsc</td>
+      <td>7th (US & Canada Division)</td>
+    </tr> 
+    <!--
+    <tr>
+      <td>CodeVinci CTF 2026</td>
+      <td>snowbird91 (individual)</td>
+      <td>52nd</td>
+    </tr> 
+    <tr>
+      <td>upCTF 2026</td>
+      <td>snowbird91 (individual)</td>
+      <td>83rd</td>
+    </tr>
+    <tr>
+      <td>ApoorvCTF 2026</td>
+      <td>snowbird91 (individual)</td>
+      <td>148th</td>
+    </tr>
+    <tr>
+      <td>CryptoNite CTF 2026</td>
+      <td>tjcsc</td>
+      <td>77th</td>
+    </tr>
+    -->
     <tr>
       <td>Srdnlen CTF 2026 Quals</td>
       <td>L3ak</td>
