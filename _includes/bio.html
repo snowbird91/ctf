@@ -1,39 +1,29 @@
 <section id="bio">
   <section id="img-wrapper">
-    <img
-      src="{{site.baseurl}}{{site.data.author.dp}}"
-      alt="{{site.data.author.name}} profile photo"
-    />
+    <img src="{{site.baseurl}}{{site.data.author.dp}}" alt="{{site.data.author.name}} profile photo" />
   </section>
   <section id="bio-wrapper">
     <div id="text-wrapper">{{site.data.author.description}}</div>
     {% if site.data.author.discord_id %}
-    <div
-      class="discord-presence discord-presence--compact"
-      data-discord-user="{{site.data.author.discord_id}}"
-      data-status="loading"
-    >
+    <div class="discord-presence discord-presence--compact"
+         data-discord-user="{{site.data.author.discord_id}}"
+         data-status="loading">
       <div class="discord-presence__header">
         <span class="discord-presence__indicator" aria-hidden="true"></span>
         <div>
           <span class="discord-presence__label">Discord</span>
-          <div class="discord-presence__state" data-discord-state>
-            Checking status...
-          </div>
+          <div class="discord-presence__state" data-discord-state>Checking status...</div>
         </div>
       </div>
-      <p class="discord-presence__message" data-discord-message>
-        Trying to reach Discord.
-      </p>
+      <p class="discord-presence__message" data-discord-message>Trying to reach Discord.</p>
     </div>
     {% endif %}
     {% assign quote_data = site.data.author.quote %}
     {% if quote_data and quote_data.text %}
     <div class="quote-box">
-      <span class="quote-mark">“</span>{{quote_data.text}}
-      <span class="quote-mark end">”</span>
+      <span class="quote-mark">"</span>{{quote_data.text}}<span class="quote-mark end">"</span>
       {% if quote_data.author %}
-      <span class="quote-author">— {{quote_data.author}}</span>
+      <span class="quote-author">&mdash; {{quote_data.author}}</span>
       {% endif %}
     </div>
     {% endif %}

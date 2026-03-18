@@ -2,7 +2,6 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="snowfall" aria-hidden="true"></div>
     <main>
       {% include header.html %}
       {% if page.show_bio %} {% include bio.html %} {% endif %}
@@ -35,41 +34,35 @@
           {% assign placeholder_message = "Posts will appear here once published." %}
           {% endif %}
           {% endif %}
-          <article
-            class="article"
+          <article class="article"
             data-tags="{{post.categories | join: ',' | downcase}}"
             data-date="{{post.date | date_to_xmlschema}}"
-            data-order="{{post.order | default: 0}}"
-          >
+            data-order="{{post.order | default: 0}}">
             <h2 class="article-title">Coming soon</h2>
             <p class="article-desc">{{placeholder_message}}</p>
           </article>
           {% endunless %}
           {% else %}
           {% for post in articles %}
-          <article
-            class="article"
+          <article class="article"
             data-tags="{{post.categories | join: ',' | downcase}}"
-            data-date="{{post.date | date_to_xmlschema}}"
-          >
+            data-date="{{post.date | date_to_xmlschema}}">
             <h2 class="article-title">
-              <a href="{{site.baseurl}}{{post.url}}"> {{post.title}} </a>
+              <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
             </h2>
             <small class="date">{{post.date | date_to_string}}</small>
             <div class="categories">
               {% for c in post.categories %}
-              <a href="#!" data-base-url="{{site.baseurl}}" class="category"
-                >{{c}}</a
-              >
+              <a href="#!" data-base-url="{{site.baseurl}}" class="category">{{c}}</a>
               {% endfor %}
             </div>
           </article>
-          {%endfor%}
+          {% endfor %}
           {% endif %}
         </section>
       {% endunless %}
       {% include footer.html %}
     </main>
-    {% include category-modal.html%}
+    {% include category-modal.html %}
   </body>
 </html>

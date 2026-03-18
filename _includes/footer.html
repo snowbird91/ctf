@@ -1,19 +1,16 @@
 <footer>
-  <p>&copy; {{ 'now' | date: "%Y" }} | {{site.title}}</p>
+  <p>&copy; {{ 'now' | date: "%Y" }} {{site.title}}</p>
   {% if site.data.author.contact and site.data.author.contact.size > 0 %}
   <div id="social-wrapper">
     {% for i in site.data.author.contact %}
     <a href="{{i.url}}" target="_blank" aria-label="{{i.title}}">
-      <img src="{{site.baseurl}}/assets/icons/{{i.title}}.png" alt="" />
+      <img src="{{site.baseurl}}/assets/icons/{{i.title}}.png" alt="{{i.title}}" />
     </a>
-    {%endfor%}
+    {% endfor %}
   </div>
   {% endif %}
   <div class="view-counter">
-    <img
-      src="https://count.getloli.com/@snowbird91_ctf_site?theme=sketch-1&padding=10&align=center&scale=0.9"
-      alt="unique visitors counter"
-    />
+    <img src="https://count.getloli.com/@snowbird91_ctf_site?theme=sketch-1&padding=10&align=center&scale=0.9" alt="visitors" />
   </div>
 </footer>
 <script src="{{site.baseurl}}/assets/js/mode.js" defer></script>

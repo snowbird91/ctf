@@ -54,7 +54,7 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>UTCTF 2026</td>
       <td>tjcsc</td>
       <td>1st 👑</td>
-    </tr> 
+    </tr>
     <tr>
       <td>iCTF 2026</td>
       <td>tjcsc</td>
@@ -121,21 +121,25 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>27th</td>
     </tr>
     -->
+    <!--
     <tr>
       <td>0xFUN CTF 2026</td>
       <td>tjcsc</td>
       <td>14th</td>
     </tr>
+    -->
     <tr>
       <td>Nullcon Goa HackIM 2026 CTF</td>
       <td>tjcsc</td>
       <td>4th</td>
     </tr>
+    <!--
     <tr>
       <td>LA CTF 2026</td>
       <td>tjcsc</td>
       <td>18th</td>
     </tr>
+    -->
     <tr>
       <td>Pragyan CTF 2026</td>
       <td>tjcsc</td>
@@ -158,11 +162,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>78th</td>
     </tr>
     -->
+    <!--
     <tr>
       <td>0xL4ugh CTF v5</td>
       <td>tjcsc</td>
       <td>20th</td>
     </tr>
+    -->
     <tr>
       <td>MetaCTF January 2026 Flash CTF</td>
       <td>0xf1sh</td>
@@ -173,11 +179,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>0xf1sh</td>
       <td>2nd</td>
     </tr>
+    <!--
     <tr>
       <td>CyberCup Indian Ocean</td>
       <td>snowbird91 (individual)</td>
       <td>19th</td>
     </tr>
+    -->
     <tr>
       <td>SCP CTF 2026</td>
       <td>snowbird91 (individual)</td>
@@ -207,11 +215,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>30th</td>
     </tr>
     -->
+    <!--
     <tr>
       <td>ASIS CTF Finals 2025</td>
       <td>tjcsc</td>
       <td>17th</td>
     </tr>
+    -->
     <!--
     <tr>
       <td>TSG CTF 2025</td>
@@ -219,11 +229,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>31st</td>
     </tr>
     -->
+    <!--
     <tr>
       <td>0CTF 2025</td>
       <td>tjcsc</td>
       <td>15th</td>
     </tr>
+    -->
     <tr>
       <td>BSides Algiers 2025</td>
       <td>tjcsc</td>
@@ -253,11 +265,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>47th</td>
     </tr>
     -->
+    <!--
     <tr>
       <td>WannaGame Championship 2025</td>
       <td>US!?</td>
       <td>15th</td>
     </tr>
+    -->
     <!--
     <tr>
       <td>CyKor CTF 2025</td>
@@ -326,11 +340,13 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>69th</td>
     </tr>
     -->
+    <!--
     <tr>
       <td>WatCTF F25</td>
       <td>0xf1sh</td>
       <td>18th</td>
     </tr>
+    -->
     <!--
     <tr>
       <td>ImaginaryCTF 2025</td>
@@ -350,6 +366,18 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
     </tr>
   </tbody>
 </table>
+
+<script>
+document.querySelectorAll(".ctf-table tbody tr").forEach(function (row) {
+  var cell = row.cells[row.cells.length - 1];
+  if (!cell) return;
+  var m = cell.textContent.match(/^(\d+)/);
+  if (!m) return;
+  var place = parseInt(m[1], 10);
+  if (place === 1) row.classList.add("win");
+  else if (place <= 10) row.classList.add("top10");
+});
+</script>
 
 ### Contact
 - Discord: [snowbird91](https://discord.com/users/633303069550968832)
