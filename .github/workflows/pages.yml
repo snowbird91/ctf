@@ -5,6 +5,8 @@ on:
     branches:
       - main
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"  # refresh rankings daily at 6 AM UTC
 
 permissions:
   contents: read
@@ -21,6 +23,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Fetch CTFTime rankings
+        run: |
+          mkdir -p _data
+          YEAR=$(date +%Y)
+          TJCSC=$(curl -sf -H "User-Agent: Mozilla/5.0" "https://ctftime.org/api/v1/teams/53812/" || echo '{}')
+          FISH=$(curl -sf -H "User-Agent: Mozilla/5.0" "https://ctftime.org/api/v1/teams/299716/" || echo '{}')
+          cat > _data/ctftime.json << ENDJSON
+          {
+            "year": $YEAR,
+            "tjcsc": {
+              "world": $(echo "$TJCSC" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('rating_place',0))" 2>/dev/null || echo 0),
+              "country": $(echo "$TJCSC" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('country_place',0))" 2>/dev/null || echo 0),
+              "country_code": $(echo "$TJCSC" | python3 -c "import sys,json; d=json.load(sys.stdin); print('\"'+d.get('country','')+'\"')" 2>/dev/null || echo '""')
+            },
+            "fish": {
+              "world": $(echo "$FISH" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('rating_place',0))" 2>/dev/null || echo 0),
+              "country": $(echo "$FISH" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('country_place',0))" 2>/dev/null || echo 0),
+              "country_code": $(echo "$FISH" | python3 -c "import sys,json; d=json.load(sys.stdin); print('\"'+d.get('country','')+'\"')" 2>/dev/null || echo '""')
+            }
+          }
+          ENDJSON
 
       - name: Setup Pages
         id: pages

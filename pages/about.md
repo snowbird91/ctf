@@ -9,12 +9,12 @@ show_bio: false
 
 I'm a high school student intersted in cybersecurity and CTFs. I usually bounce between two teams:
 
-- **[tjcsc](https://ctftime.org/team/53812)** — captain of my high school club team. top 10 United States team on CTFTime (as of 12/25/2025)
-- **[0xf1sh](https://0xf1.sh)** — secondary roster for CTFs.
+- **[tjcsc](https://ctftime.org/team/53812)** — captain of my high school club team.{% if site.data.ctftime.tjcsc.world > 0 %} <span class="team-rank">{{ site.data.ctftime.tjcsc.world }}{% case site.data.ctftime.tjcsc.world %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %} worldwide, {{ site.data.ctftime.tjcsc.country }}{% case site.data.ctftime.tjcsc.country %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %} {{ site.data.ctftime.tjcsc.country_code }}</span>{% endif %}
+- **[0xf1sh](https://0xf1.sh)** — secondary roster for CTFs.{% if site.data.ctftime.fish.world > 0 %} <span class="team-rank">{{ site.data.ctftime.fish.world }}{% case site.data.ctftime.fish.world %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %} worldwide, {{ site.data.ctftime.fish.country }}{% case site.data.ctftime.fish.country %}{% when 1 %}st{% when 2 %}nd{% when 3 %}rd{% else %}th{% endcase %} {{ site.data.ctftime.fish.country_code }}</span>{% endif %}
 
 ### Focus areas
-- Forensics, cryptography, OSINT
-- Comfortable jumping into rev, pwn, web, and misc when needed
+- Forensics, reverse engineering, OSINT
+- Comfortable jumping into crypto, pwn, web, and misc when needed
 
 ### What I'm up to
 - Planning lectures and writing challenges for the club in-house CTF

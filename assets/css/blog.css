@@ -533,6 +533,18 @@ header .brand {
   color: var(--bg);
 }
 
+/* ── Team rank badges ── */
+.team-rank {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.team-rank:empty {
+  display: none;
+}
+
 /* ── Page content (used in about, 404) ── */
 .page {
   margin: 1rem 0 2rem;
