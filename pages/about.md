@@ -34,6 +34,11 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>Lockheed Martin CYBERQUEST® (Bethesda, MD)</td>
+      <td>monkeys and typewriters (tjcsc)</td>
+      <td>1st 👑</td>
+    </tr>
+    <tr>
       <td>MetaCTF March 2026 Flash CTF</td>
       <td>snowbird91 (individual)</td>
       <td>3rd</td>
