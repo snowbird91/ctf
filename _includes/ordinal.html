@@ -1,1 +1,1 @@
-{% assign __n = include.n | modulo: 100 %}{% assign __n1 = include.n | modulo: 10 %}{% if __n == 11 or __n == 12 or __n == 13 %}th{% elsif __n1 == 1 %}st{% elsif __n1 == 2 %}nd{% elsif __n1 == 3 %}rd{% else %}th{% endif %}
+{% assign __s = include.n | append: "" %}{% assign __last2 = __s | slice: -2, 2 %}{% assign __last1 = __s | slice: -1, 1 %}{% if __last2 == "11" or __last2 == "12" or __last2 == "13" %}th{% elsif __last1 == "1" %}st{% elsif __last1 == "2" %}nd{% elsif __last1 == "3" %}rd{% else %}th{% endif %}
