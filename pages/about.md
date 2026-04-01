@@ -34,6 +34,18 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>KalmarCTF 2026</td>
+      <td>tjcsc</td>
+      <td>6th</td>
+    </tr>
+    <!--
+    <tr>
+      <td>TexSAW 2026</td>
+      <td>tjcsc</td>
+      <td>20th</td>
+    </tr>
+    -->
+    <tr>
       <td>Lockheed Martin CYBERQUEST® (Bethesda, MD)</td>
       <td>monkeys and typewriters (tjcsc)</td>
       <td>1st 👑</td>
