@@ -4,6 +4,7 @@ title: "PDFBill"
 categories: [misc, haix-la-chapelle2025]
 date: 2025-11-30 10:00:00 -0500
 writeup: true
+published: false
 permalink: /write-ups/pdfbill/
 order: 5
 ---
