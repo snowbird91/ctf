@@ -35,13 +35,18 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   <tbody>
     <tr>
       <td>NCL Spring 2026 Team Game</td>
-      <td>0xf1sh (misinput greater than winning therefore misinput)</td>
+      <td>misinput greater than winning therefore misinput (0xf1sh)</td>
       <td>2nd (High School Bracket)</td>
     </tr>
     <tr>
       <td>UMDCTF 2026</td>
       <td>tjcsc</td>
       <td>3rd (Student Division)</td>
+    </tr>
+    <tr>
+      <td>	Incognito 7.0</td>
+      <td>tjcsc</td>
+      <td>1st 👑</td>
     </tr>
     <tr>
       <td>NCL Spring 2026 Individual Game</td>
