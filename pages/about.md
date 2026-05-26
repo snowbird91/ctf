@@ -34,6 +34,31 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>NCL Spring 2026 Team Game</td>
+      <td>0xf1sh (misinput greater than winning therefore misinput)</td>
+      <td>2nd (High School Bracket)</td>
+    </tr>
+    <tr>
+      <td>UMDCTF 2026</td>
+      <td>tjcsc</td>
+      <td>3rd (Student Division)</td>
+    </tr>
+    <tr>
+      <td>NCL Spring 2026 Individual Game</td>
+      <td>snowbird91</td>
+      <td>6th (High School Bracket)</td>
+    </tr>
+    <tr>
+      <td>DawgCTF 2026</td>
+      <td>tjcsc</td>
+      <td>10th</td>
+    </tr>
+    <tr>
+      <td>SillyCTF 2</td>
+      <td>tjcsc</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
       <td>KalmarCTF 2026</td>
       <td>tjcsc</td>
       <td>6th</td>
