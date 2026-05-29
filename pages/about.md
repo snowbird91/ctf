@@ -34,6 +34,11 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
   </thead>
   <tbody>
     <tr>
+      <td>MetaCTF May 2026 Flash CTF</td>
+      <td>snowbird91 (individual)</td>
+      <td>7th</td>
+    </tr>
+    <tr>
       <td>NCL Spring 2026 Team Game</td>
       <td>misinput greater than winning therefore misinput (0xf1sh)</td>
       <td>2nd (High School Bracket)</td>
@@ -44,7 +49,12 @@ I'm a high school student intersted in cybersecurity and CTFs. I usually bounce 
       <td>3rd (Student Division)</td>
     </tr>
     <tr>
-      <td>	Incognito 7.0</td>
+      <td>MetaCTF April 2026 Flash CTF</td>
+      <td>snowbird91 (individual)</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <td>Incognito 7.0</td>
       <td>tjcsc</td>
       <td>1st 👑</td>
     </tr>
