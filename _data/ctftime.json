@@ -1,13 +1,18 @@
 {
   "year": 2026,
+  "l3ak": {
+    "world": 38,
+    "country": 5,
+    "country_code": "US"
+  },
   "tjcsc": {
     "world": 4,
-    "country": 2,
+    "country": 1,
     "country_code": "US"
   },
   "fish": {
-    "world": 154,
-    "country": 15,
+    "world": 412,
+    "country": 33,
     "country_code": "US"
   }
 }

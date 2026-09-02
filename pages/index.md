@@ -12,7 +12,7 @@ Welcome to my website! Here's what I have to offer:
 
 - **About:** background, teams, and ways to reach me.
 - **Write-ups:** explanations of how I solved challenges!
-- **Blog:** quick notes, experiments, and thoughts between events.
+- **Blog:** some thoughts/experiences I've had.
 - **Links:** Discord is best if you want to get in touch with me! Please let me know you found me through here.
 
 {% assign writeups = site.pages | where: "writeup", true | sort: "order" | reverse %}

@@ -24,15 +24,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Fetch CTFTime rankings
+      - name: Fetch CTFtime rankings
         run: |
           mkdir -p _data
           YEAR=$(date +%Y)
+          L3AK=$(curl -sf -H "User-Agent: Mozilla/5.0" "https://ctftime.org/api/v1/teams/220336/" || echo '{}')
           TJCSC=$(curl -sf -H "User-Agent: Mozilla/5.0" "https://ctftime.org/api/v1/teams/53812/" || echo '{}')
           FISH=$(curl -sf -H "User-Agent: Mozilla/5.0" "https://ctftime.org/api/v1/teams/299716/" || echo '{}')
           cat > _data/ctftime.json << ENDJSON
           {
             "year": $YEAR,
+            "l3ak": {
+              "world": $(echo "$L3AK" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('rating_place',0))" 2>/dev/null || echo 0),
+              "country": $(echo "$L3AK" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('country_place',0))" 2>/dev/null || echo 0),
+              "country_code": $(echo "$L3AK" | python3 -c "import sys,json; d=json.load(sys.stdin); print('\"'+d.get('country','')+'\"')" 2>/dev/null || echo '\"\"')
+            },
             "tjcsc": {
               "world": $(echo "$TJCSC" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('rating_place',0))" 2>/dev/null || echo 0),
               "country": $(echo "$TJCSC" | python3 -c "import sys,json; d=json.load(sys.stdin); r=d.get('rating',{}).get(str($YEAR),{}); print(r.get('country_place',0))" 2>/dev/null || echo 0),

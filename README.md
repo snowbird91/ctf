@@ -8,7 +8,7 @@ Personal Jekyll site for my security projects, CTF write-ups, and notes. The des
 | -------------------------------- | --------------------------------------------------------- |
 | `pages/`                         | Top-level static pages (home, about, blog, etc.)          |
 | `write-ups/<slug>/`              | One folder per write-up with its Markdown + assets        |
-| `blog/`                          | Placeholder for future general blog posts                 |
+| `blog/<slug>/`                   | One folder per general blog post                           |
 | `assets/`                        | CSS/JS/theme assets (icons, scripts, shared styles)       |
 
 ## Local Development
@@ -24,7 +24,7 @@ Visit `http://127.0.0.1:4000/` by default (adjust for your `baseurl`).
 
 - Edit `_data/author.yml` for bio, social links, and quote.
 - Update `pages/` markdown files for site sections.
-- Drop posts into `all_collections/_posts/` (e.g., `2024-05-10-challenge.md`).
+- Add blog posts under `blog/<slug>/` and challenge write-ups under `write-ups/<slug>/`.
 - Add assets or tweak styles in `assets/css` and `assets/js`.
 
 ## Deployment

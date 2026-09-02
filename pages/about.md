@@ -7,20 +7,11 @@ show_bio: false
 
 ## Hey! I'm Andrew (snowbird91)
 
-I'm a high school student intersted in cybersecurity and CTFs. I usually bounce between two teams:
+I'm a high school student interested in cybersecurity and CTFs. I compete with three teams:
 
-- **[tjcsc](https://ctftime.org/team/53812)** — captain of my high school club team.{% if site.data.ctftime.tjcsc.world > 0 %} <span class="team-rank">{{ site.data.ctftime.tjcsc.world }}{% include ordinal.html n=site.data.ctftime.tjcsc.world %} worldwide, {{ site.data.ctftime.tjcsc.country }}{% include ordinal.html n=site.data.ctftime.tjcsc.country %} {{ site.data.ctftime.tjcsc.country_code }}</span>{% endif %}
-- **[0xf1sh](https://0xf1.sh)** — secondary roster for CTFs.{% if site.data.ctftime.fish.world > 0 %} <span class="team-rank">{{ site.data.ctftime.fish.world }}{% include ordinal.html n=site.data.ctftime.fish.world %} worldwide, {{ site.data.ctftime.fish.country }}{% include ordinal.html n=site.data.ctftime.fish.country %} {{ site.data.ctftime.fish.country_code }}</span>{% endif %}
-
-### Focus areas
-- Forensics, reverse engineering, OSINT
-- Comfortable jumping into crypto, pwn, web, and misc when needed
-
-### What I'm up to
-- Planning lectures and writing challenges for the club in-house CTF
-- Learning how to write write-ups
-- Deepening my knowledge of pwn, learning new techniques
-- Making this website better :)
+- **[L3ak](https://ctftime.org/team/220336)** - member and infrastructure lead for L3akCTF 2026.{% if site.data.ctftime.l3ak.world > 0 %} <span class="team-rank">{{ site.data.ctftime.l3ak.world }}{% include ordinal.html n=site.data.ctftime.l3ak.world %} worldwide, {{ site.data.ctftime.l3ak.country }}{% include ordinal.html n=site.data.ctftime.l3ak.country %} {{ site.data.ctftime.l3ak.country_code }}</span>{% endif %}
+- **[tjcsc](https://ctftime.org/team/53812)** - captain of my high school club team.{% if site.data.ctftime.tjcsc.world > 0 %} <span class="team-rank">{{ site.data.ctftime.tjcsc.world }}{% include ordinal.html n=site.data.ctftime.tjcsc.world %} worldwide, {{ site.data.ctftime.tjcsc.country }}{% include ordinal.html n=site.data.ctftime.tjcsc.country %} {{ site.data.ctftime.tjcsc.country_code }}</span>{% endif %}
+- **[0xf1sh](https://0xf1.sh)** - secondary roster for CTFs.{% if site.data.ctftime.fish.world > 0 %} <span class="team-rank">{{ site.data.ctftime.fish.world }}{% include ordinal.html n=site.data.ctftime.fish.world %} worldwide, {{ site.data.ctftime.fish.country }}{% include ordinal.html n=site.data.ctftime.fish.country %} {{ site.data.ctftime.fish.country_code }}</span>{% endif %}
 
 ### CTFs
 
