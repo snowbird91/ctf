@@ -38,12 +38,18 @@ jobs:
         with:
           gradle-version: '8.9'
 
-      - name: Install Android SDK packages
+      - name: Ensure Android SDK packages
         shell: bash
         run: |
           set -euxo pipefail
-          yes | sdkmanager --licenses >/dev/null || true
-          sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          find "$ANDROID_HOME" -maxdepth 4 -type f -name sdkmanager -print || true
+          SDKMANAGER="$(find "$ANDROID_HOME" -type f -name sdkmanager -print -quit || true)"
+          if [ -n "$SDKMANAGER" ]; then
+            yes | "$SDKMANAGER" --licenses >/dev/null || true
+            "$SDKMANAGER" 'platforms;android-35' 'build-tools;35.0.0'
+          fi
+          test -f "$ANDROID_HOME/platforms/android-35/android.jar"
 
       - name: Reconstruct Android project
         shell: bash
@@ -64,7 +70,9 @@ jobs:
           APK=/tmp/ariadne-project/app/build/outputs/apk/debug/app-debug.apk
           test -s "$APK"
           unzip -t "$APK"
-          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose --print-certs "$APK"
+          APKSIGNER="$(find "$ANDROID_HOME/build-tools" -type f -name apksigner -print | sort -V | tail -1)"
+          test -n "$APKSIGNER"
+          "$APKSIGNER" verify --verbose --print-certs "$APK"
           base64 -w0 "$APK" > "$APK_B64_PATH"
           sha256sum "$APK" | sed 's#  .*#  ariadne_solver_v2_READY.apk#' > "$APK_SHA_PATH"
           wc -c "$APK" "$APK_B64_PATH"
