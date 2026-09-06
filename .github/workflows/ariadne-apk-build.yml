@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 env:
-  APK_B64_PATH: tools/ariadne_solver_v2_READY.apk.b64
+  APK_PATH: tools/ariadne_solver_v2_READY.apk
   APK_SHA_PATH: tools/ariadne_solver_v2_READY.sha256
 
 jobs:
@@ -43,7 +43,6 @@ jobs:
         run: |
           set -euxo pipefail
           echo "ANDROID_HOME=$ANDROID_HOME"
-          find "$ANDROID_HOME" -maxdepth 4 -type f -name sdkmanager -print || true
           SDKMANAGER="$(find "$ANDROID_HOME" -type f -name sdkmanager -print -quit || true)"
           if [ -n "$SDKMANAGER" ]; then
             yes | "$SDKMANAGER" --licenses >/dev/null || true
@@ -60,35 +59,36 @@ jobs:
           cat tools/ariadne_ci_project.zip.part* > /tmp/ariadne-project.zip
           unzip -t /tmp/ariadne-project.zip
           unzip -q /tmp/ariadne-project.zip -d /tmp/ariadne-project
-          find /tmp/ariadne-project -maxdepth 8 -type f -print
 
       - name: Build and verify signed debug APK
         shell: bash
         run: |
           set -euxo pipefail
           gradle --no-daemon -p /tmp/ariadne-project :app:assembleDebug --stacktrace
-          APK=/tmp/ariadne-project/app/build/outputs/apk/debug/app-debug.apk
-          test -s "$APK"
-          unzip -t "$APK"
+          BUILT_APK=/tmp/ariadne-project/app/build/outputs/apk/debug/app-debug.apk
+          test -s "$BUILT_APK"
+          unzip -t "$BUILT_APK"
           APKSIGNER="$(find "$ANDROID_HOME/build-tools" -type f -name apksigner -print | sort -V | tail -1)"
           test -n "$APKSIGNER"
-          "$APKSIGNER" verify --verbose --print-certs "$APK"
-          base64 -w0 "$APK" > "$APK_B64_PATH"
-          sha256sum "$APK" | sed 's#  .*#  ariadne_solver_v2_READY.apk#' > "$APK_SHA_PATH"
-          wc -c "$APK" "$APK_B64_PATH"
+          "$APKSIGNER" verify --verbose --print-certs "$BUILT_APK"
+          cp "$BUILT_APK" "$APK_PATH"
+          sha256sum "$APK_PATH" | sed 's#  .*#  ariadne_solver_v2_READY.apk#' > "$APK_SHA_PATH"
+          test -s "$APK_PATH"
+          wc -c "$APK_PATH"
           cat "$APK_SHA_PATH"
 
-      - name: Persist encoded APK to branch
+      - name: Persist APK to branch
         shell: bash
         run: |
           set -euxo pipefail
+          rm -f tools/ariadne_solver_v2_READY.apk.b64
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add "$APK_B64_PATH" "$APK_SHA_PATH"
+          git add -A tools/ariadne_solver_v2_READY*
           if git diff --cached --quiet; then
             echo 'No APK output change.'
           else
-            git commit -m 'Build Ariadne solver APK [skip ci]'
+            git commit -m 'Publish Ariadne solver APK binary [skip ci]'
             git push origin HEAD:chatgpt/ariadne-apk-fix-20260905
           fi
 
@@ -97,6 +97,7 @@ jobs:
         with:
           name: ariadne-solver-v2
           path: |
-            /tmp/ariadne-project/app/build/outputs/apk/debug/app-debug.apk
+            tools/ariadne_solver_v2_READY.apk
             tools/ariadne_solver_v2_READY.sha256
+          if-no-files-found: error
           retention-days: 1
